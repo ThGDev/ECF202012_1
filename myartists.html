@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mes Artistes</title>
+</head>
+<body>
+    <!-- ENTETE AVEC LOGO + H1 + NAVBAR -->
+    <header class="d-flex flex-row align-items-center">
+        <a href="index.html"><img src="img/logo3.png" alt="logo" id="logo"></a>
+        <h1>Toute <span>ma musique</span> au même endroit !</h1>
+    </header>
+    <!-- NAVBAR -->
+    <nav class="nav d-flex justify-content-center">
+        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+        <a class="nav-link" href="#">Mes Artistes</a>
+        <a class="nav-link" href="#">Qui sommes-nous</a>
+    </nav>
+
+    <!-- CONTENU GENERAL -->
+    <main class="container">
+        <!-- BIO -->
+        <h2>La <span class="titreSpanBio">BIO</span> du moment</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center p-3">
+            <div class="blocArtisteBio col">
+                <img class="img-fluid rounded" src="img/zik/bio/vianney.jpg" alt="Vianney">
+                <a href="http://vianney-musique.com" target="_blank"><p class="badge rounded-pill bg-secondary">Vianney</p></a>
+                <iframe scrolling="no" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&color=EF5466&layout=&size=medium&type=tracks&id=561251392&app_id=1"></iframe>
+            </div>
+            <div class="blocTexteBio col">
+                <p>
+                    Vianney Bureau dit Vianney, né le 13 février 1991 à Pau, est un auteur-compositeur-interprète français.
+                </p>
+                <p>
+                    À 24 ans, il remporte le trophée d'artiste interprète de l'année aux Victoires de la musique 2016, un an après avoir été nommé dans les Révélations des Victoires de la Musique 2015. Son premier album, Idées blanches, est certifié disque de platine.
+                </p>
+                <p>
+                    Son deuxième album, Vianney, est sorti le 25 novembre 2016 et est certifié disque de diamant. Il en est l'auteur-compositeur, le réalisateur et l'arrangeur.
+                </p>
+                <div class="justify-content-center row row-cols-2 row-cols-md-4">
+                    <a class="btn btn-wkpd col" id="wikipedia" href="https://fr.wikipedia.org/wiki/Vianney_(chanteur)" target="_blank"><span class="iconify" data-inline="false" data-icon="simple-icons:wikipedia" style="color: #000; font-size: 24px;"></span> Wikipedia</a>
+                </div>
+            </div>
+            <!-- BLOC PROCHAINS CONCERTS -->
+            <div class="blocProchainConcert d-flex flex-column justify-content-evenly align-items-center col rounded">
+                <h3>Ses prochains concerts</h3>
+                <!-- DATE 1 -->
+                <div class="blocDateConcert d-flex justify-content-center rounded row row-cols-2 p-1">
+                    <div class="date col">
+                        <p>Samedi</p>
+                        <p class="chiffreDate">27</p>
+                        <p>Février 2021</p>
+                    </div>
+                    <div class="lieu col">
+                        <p>Le Rocher de Palmer</p>
+                        <p><strong>Cenon</strong> (33)</p>
+                    </div>
+                </div>
+                <!-- DATE 2 -->
+                <div class="blocDateConcert d-flex justify-content-center rounded row row-cols-2 p-1">
+                    <div class="date col">
+                        <p>Mercredi</p>
+                        <p class="chiffreDate">03</p>
+                        <p>Mars 2021</p>
+                    </div>
+                    <div class="lieu col">
+                        <p>Transbordeur</p>
+                        <p><strong>Lyon</strong> (69)</p>
+                    </div>
+                </div>
+                <!-- DATE 3 -->
+                <div class="blocDateConcert d-flex justify-content-center rounded row row-cols-2 p-1">
+                    <div class="date col">
+                        <p>Jeudi</p>
+                        <p class="chiffreDate">04</p>
+                        <p>Mars 2021</p>
+                    </div>
+                    <div class="lieu col">
+                        <p>La Rodia</p>
+                        <p><strong>Besançon</strong> (25)</p>
+                    </div>
+                </div>
+                <div class="justify-content-center row row-cols-2 row-cols-md-4">
+                    <button class="btn btn-fnac col d-flex align-items-center justify-content-evenly" id="fnac">Voir à la <span class="iconify" data-inline="false" data-icon="simple-icons:fnac" style="color: #000; font-size: 36px;"></span></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAVORIS -->
+        <h2 class="bandeauTitreH2 p-2">Mes favoris <i class="fas fa-star"></i></h2>
+        <div id="rechrec" class="row row-cols-1 row-cols-md-2">
+
+            <!-- LES ARTISTES / GROUPES -->
+            <div class="artistes col">
+                <h3 class="bandeauTitreH3Artistes p-1">Artistes / Groupes :</h3>
+                <div class="contenuArtistes d-flex flex-wrap justify-content-evenly">
+                    <!-- ARTISTE 1 - Image dans rep. IMG/ZIK/ -->
+                    <div class="blocArtiste">
+                        <span class="favArtistes" data-bs-toggle="tooltip" data-bs-placement="top" title="Enlever des favoris"><a href="#"><i class="fas fa-star"></i></a></span>
+                        <img class="img-fluid rounded" src="img/zik/acdc-high-voltage.jpg" alt="Image-Artiste">
+                        <a href="#"><p class="badge rounded-pill bg-secondary">AC/DC</p></a>
+                    </div>
+                    <!-- ARTISTE 2 - Image dans rep. IMG/ZIK/ -->
+                    <div class="blocArtiste">
+                        <span class="favArtistes" data-bs-toggle="tooltip" data-bs-placement="top" title="Enlever des favoris"><a href="#"><i class="fas fa-star"></i></a></span>
+                        <img class="img-fluid rounded" src="img/zik/nirvana-nevermind.jpg" alt="Image-Artiste">
+                        <a href="#"><p class="badge rounded-pill bg-secondary">Nirvana</p></a>
+                    </div>
+                    <!-- ARTISTE 3 - Image dans rep. IMG/ZIK/ -->
+                    <div class="blocArtiste">
+                        <span class="favArtistes" data-bs-toggle="tooltip" data-bs-placement="top" title="Enlever des favoris"><a href="#"><i class="fas fa-star"></i></a></span>
+                        <img class="img-fluid rounded" src="img/zik/aznavour-la-boheme.jpg" alt="Image-Artiste">
+                        <a href="#"><p class="badge rounded-pill bg-secondary">C. Aznavour</p></a>
+                    </div>
+                    <!-- ARTISTE 4 - Image dans rep. IMG/ZIK/ -->
+                    <div class="blocArtiste">
+                        <span class="favArtistes" data-bs-toggle="tooltip" data-bs-placement="top" title="Enlever des favoris"><a href="#"><i class="fas fa-star"></i></a></span>
+                        <img class="img-fluid rounded" src="img/zik/eminem-the-eminem-show.jpg" alt="Image-Artiste">
+                        <a href="#"><p class="badge rounded-pill bg-secondary">Eminem</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LES TITRES -->
+            <div class="titres col">
+                <h3 class="bandeauTitreH3Titres p-1">Titres :</h3>
+                <div class="contenuTitres d-flex flex-wrap justify-content-evenly">
+                    <!--TITRE 1 - Image dans rep. IMG/ZIK/ -->
+                    <div class="blocTitre">
+                        <span class="favTitres" data-bs-toggle="tooltip" data-bs-placement="top" title="Enlever des favoris"><a href="#"><i class="fas fa-star"></i></a></span>
+                        <img class="img-fluid rounded" src="img/zik/noir-desir-tostaky.jpg" alt="Image-Titre">
+                        <a href="#"><span class="badge rounded-pill bg-light text-dark">Noir Désir</span></a>
+                        <a href="#"><span class="badge rounded-pill bg-success">Tostaky</span></a>
+                    </div>
+                    <!-- TITRE 2 - Image dans rep. IMG/ZIK/ -->
+                    <div class="blocTitre">
+                        <span class="favTitres" data-bs-toggle="tooltip" data-bs-placement="top" title="Enlever des favoris"><a href="#"><i class="fas fa-star"></i></a></span>
+                        <img class="img-fluid rounded" src="img/zik/m-jackson_off-the-wall.jpg" alt="Image-Titre">
+                        <a href="#"><span class="badge rounded-pill bg-light text-dark">M. Jackson</span></a>
+                        <a href="#"><span class="badge rounded-pill bg-success">Don't stop ...</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEOS EN RELATION -->
+        <h2 class="bandeauTitreH2 p-2">Vidéos en relation :</h2>
+        <div id="videos" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 p-3">
+
+            <!-- Vidéo 1 -->
+            <div class="vid col rounded bg-light p-2">
+                <iframe src="https://www.youtube.com/embed/P5iqHyEpb4k" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- Vidéo 2 -->
+            <div class="vid col rounded bg-light p-2">
+                <iframe src="https://www.youtube.com/embed/0i-Fhce_fac" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- Vidéo 3 -->
+            <div class="vid col rounded bg-light p-2">
+                <iframe src="https://www.youtube.com/embed/dbxyKR1P8vA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- Vidéo 4 -->
+            <div class="vid col rounded bg-light p-2">
+                <iframe src="https://www.youtube.com/embed/8pWSLWIp2-Q" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER AVEC LIENS -->
+    <footer class="p-2">
+        <ul>
+            <li><a href="#">Qui sommes-nous</a></li>
+            <li><a href="#">Liens</a></li>
+            <li><a href="#">Partenaires</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="assets/app.js"></script>
+</body>
+</html>
